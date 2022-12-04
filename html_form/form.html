@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>school form</title>
+  </head>
+
+  <body>
+    <form action="" method="get">
+      <label for="name">Name:</label>
+      <input type="text" name="name" />
+      <button>Submit</button>
+      <br />
+      <input type="checkbox" id="yes" name="yes" />
+      <label for="yes">YES</label>
+      <input type="checkbox" id="no" name="no" />
+      <label for="no">NO</label>
+      <input type="color" id="body" name="body" value="#f6b73c" />
+      <label for="body">BODY</label>
+      <br />
+      <label for="start">Start date:</label>
+
+      <input
+        type="date"
+        id="start"
+        name="trip-start"
+        value="2018-07-22"
+        min="1900-01-01"
+        max="2050-12-31"
+      />
+      <button>Submit</button>
+
+      <br />
+      <label for="email">Enter your globex.com email:</label>
+
+      <input
+        type="email"
+        id="email"
+        pattern=".+@globex\.com"
+        size="30"
+        required
+      />
+
+      <br />
+      <label for="img_file">Upload a file</label>
+      <input
+        type="file"
+        id="img_file"
+        name="img_file"
+        accept="image/png, image/jpeg"
+      />
+
+      <input type="range" id="volume" name="volume" min="0" max="11" />
+      <label for="volume">Volume</label>
+
+      <button>submit</button>
+    </form>
+  </body>
+</html>
